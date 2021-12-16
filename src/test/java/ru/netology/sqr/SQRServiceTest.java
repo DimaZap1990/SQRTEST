@@ -15,11 +15,11 @@ class SQRServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shouldSQRFall() {
+    void shouldIfWeDontHaveSQRInBorders() {
         SQRService service = new SQRService();
-        int min = 100;
-        int max = 300;
-        int expected= 5;
+        int min = 12;
+        int max = 13;
+        int expected= 0;
         int actual = service.borderSquares(min, max);
         assertEquals(expected, actual);
     }
